@@ -24,3 +24,9 @@ const buildControl = (props) => {
 // buildControl.propTypes = {};
 
 export default buildControl;
+
+// driver.find_element_by_xpath("//button[@class='aOOlW   HoLwm ']")
+
+// driver.findElement(By.xpath("//button.contains[@class, 'sqdOP')]")).click();
+
+// [contains(@class, 'is-mobile')]
