@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Aux from '../Auxilliary/Auxilliary';
-import classes from './Layout.module.css';
-import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+import Aux from '../Auxilliary/Auxilliary'
+import classes from './Layout.module.css'
+import Toolbar from '../../components/Navigation/Toolbar/Toolbar'
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer'
 
 class Layout extends Component {
   state = {
     showSideDrawer: false,
-  };
+  }
 
   sideDrawerToggleHandler = () => {
     this.setState((prevState) => {
-      return { showSideDrawer: !prevState.showSideDrawer };
-    });
-  };
+      return { showSideDrawer: !prevState.showSideDrawer }
+    })
+  }
 
   render() {
     return (
@@ -26,8 +26,8 @@ class Layout extends Component {
         />
         <main className={classes.Content}>{this.props.children}</main>
       </Aux>
-    );
+    )
   }
 }
 
-export default Layout;
+export default Layout

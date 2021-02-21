@@ -1,7 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-import classes from './NavigationItem.module.css';
+import classes from './NavigationItem.module.css'
 
 const NavigationItem = (props) => {
   return (
@@ -14,7 +14,7 @@ const NavigationItem = (props) => {
         {props.children}
       </NavLink>
     </li>
-  );
-};
+  )
+}
 
-export default NavigationItem;
+export default NavigationItem

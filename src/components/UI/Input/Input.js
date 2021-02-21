@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import classes from './Input.module.css';
+import classes from './Input.module.css'
 
 const input = (props) => {
-  let inputElement = null;
-  const inputClasses = [classes.InputElement];
+  let inputElement = null
+  const inputClasses = [classes.InputElement]
 
   if (props.invalid && props.shouldValidate && props.touched) {
-    inputClasses.push(classes.Invalid);
+    inputClasses.push(classes.Invalid)
   }
 
   switch (props.elementType) {
@@ -19,8 +19,8 @@ const input = (props) => {
           value={props.value}
           onChange={props.changed}
         />
-      );
-      break;
+      )
+      break
     case 'textarea':
       inputElement = (
         <textarea
@@ -29,8 +29,8 @@ const input = (props) => {
           value={props.value}
           onChange={props.changed}
         />
-      );
-      break;
+      )
+      break
     case 'select':
       inputElement = (
         <select
@@ -44,8 +44,8 @@ const input = (props) => {
             </option>
           ))}
         </select>
-      );
-      break;
+      )
+      break
     default:
       inputElement = (
         <input
@@ -54,7 +54,7 @@ const input = (props) => {
           value={props.value}
           onChange={props.changed}
         />
-      );
+      )
   }
 
   return (
@@ -62,7 +62,7 @@ const input = (props) => {
       <label className={classes.Label}>{props.label}</label>
       {inputElement}
     </div>
-  );
-};
+  )
+}
 
-export default input;
+export default input

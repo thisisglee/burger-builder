@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import classes from './NavigationItems.module.css';
-import NavigationItem from './NavigationItem/NavigationItem';
+import classes from './NavigationItems.module.css'
+import NavigationItem from './NavigationItem/NavigationItem'
 
 const NavigationItems = (props) => {
   return (
@@ -10,8 +10,9 @@ const NavigationItems = (props) => {
         Burger Builder
       </NavigationItem>
       <NavigationItem link="/orders">Orders</NavigationItem>
+      <NavigationItem link="/auth">Authenticate</NavigationItem>
     </ul>
-  );
-};
+  )
+}
 
-export default NavigationItems;
+export default NavigationItems

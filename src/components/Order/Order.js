@@ -1,14 +1,14 @@
-import React from 'react';
-import classes from './Order.module.css';
+import React from 'react'
+import classes from './Order.module.css'
 
 const Order = (props) => {
-  const ingredients = [];
+  const ingredients = []
 
   for (let ingredientName in props.ingredients) {
     ingredients.push({
       name: ingredientName,
       amount: props.ingredients[ingredientName],
-    });
+    })
   }
   const ingredientOutput = ingredients.map((ig) => {
     return (
@@ -24,8 +24,8 @@ const Order = (props) => {
       >
         {ig.name} = ({ig.amount})
       </span>
-    );
-  });
+    )
+  })
   return (
     <div className={classes.Order}>
       <p>Ingredients: {ingredientOutput}</p>
@@ -33,7 +33,7 @@ const Order = (props) => {
         Price: <strong>CAD {props.price}</strong>
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default Order;
+export default Order

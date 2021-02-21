@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import classes from './Modal.module.css';
-import Aux from '../../../hoc/Auxilliary/Auxilliary';
-import Backdrop from '../Backdrop/Backdrop';
+import classes from './Modal.module.css'
+import Aux from '../../../hoc/Auxilliary/Auxilliary'
+import Backdrop from '../Backdrop/Backdrop'
 
 export class Modal extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return (
       nextProps.show !== this.props.show ||
       nextProps.children !== this.props.children
-    );
+    )
   }
 
   // componentDidUpdate() {
@@ -30,8 +30,8 @@ export class Modal extends Component {
           {this.props.children}
         </div>
       </Aux>
-    );
+    )
   }
 }
 
-export default Modal;
+export default Modal

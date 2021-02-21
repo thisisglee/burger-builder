@@ -1,7 +1,7 @@
-import React from 'react';
-import Burger from '../../Burger/Burger';
-import Button from '../../UI/Button/Button';
-import classes from './CheckoutSummary.module.css';
+import React from 'react'
+import Burger from '../../Burger/Burger'
+import Button from '../../UI/Button/Button'
+import classes from './CheckoutSummary.module.css'
 
 const checkoutSummary = (props) => {
   return (
@@ -17,7 +17,7 @@ const checkoutSummary = (props) => {
         CONTINUE
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default checkoutSummary;
+export default checkoutSummary

@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 // import PropTypes from 'prop-types';
 
-import classes from './BuildControls.module.css';
-import BuildControl from './BuildControl/BuildControl';
+import classes from './BuildControls.module.css'
+import BuildControl from './BuildControl/BuildControl'
 
 const controls = [
   { label: 'Salad', type: 'salad' },
   { label: 'Bacon', type: 'bacon' },
   { label: 'Cheese', type: 'cheese' },
   { label: 'Meat', type: 'meat' },
-];
+]
 
 const buildControls = (props) => {
   return (
@@ -26,7 +26,7 @@ const buildControls = (props) => {
             removed={() => props.ingredientRemoved(ctrl.type)}
             disabled={props.disabled[ctrl.type]}
           />
-        );
+        )
       })}
       <button
         onClick={props.ordered}
@@ -36,9 +36,9 @@ const buildControls = (props) => {
         ORDER NOW
       </button>
     </div>
-  );
-};
+  )
+}
 
 // buildControls.propTypes = {};
 
-export default buildControls;
+export default buildControls

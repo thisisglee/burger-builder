@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 // import PropTypes from 'prop-types';
 
-import classes from './BuildControl.module.css';
+import classes from './BuildControl.module.css'
 
 const buildControl = (props) => {
   return (
@@ -18,12 +18,12 @@ const buildControl = (props) => {
         More
       </button>
     </div>
-  );
-};
+  )
+}
 
 // buildControl.propTypes = {};
 
-export default buildControl;
+export default buildControl
 
 // driver.find_element_by_xpath("//button[@class='aOOlW   HoLwm ']")
 
